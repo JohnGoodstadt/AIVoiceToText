@@ -11,6 +11,7 @@
 		75C25B5C2AF7A7D1009F4273 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C25B5B2AF7A7D1009F4273 /* ContentView.swift */; };
 		75C25B5E2AF7A7D2009F4273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C25B5D2AF7A7D2009F4273 /* Assets.xcassets */; };
 		75C25B612AF7A7D2009F4273 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C25B602AF7A7D2009F4273 /* Preview Assets.xcassets */; };
+		75C25B682AF7A853009F4273 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C25B672AF7A853009F4273 /* SpeechRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		75C25B5B2AF7A7D1009F4273 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		75C25B5D2AF7A7D2009F4273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75C25B602AF7A7D2009F4273 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		75C25B672AF7A853009F4273 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				75C25B592AF7A7D1009F4273 /* AIVoiceToTextApp.swift */,
 				75C25B5B2AF7A7D1009F4273 /* ContentView.swift */,
+				75C25B672AF7A853009F4273 /* SpeechRecognizer.swift */,
 				75C25B5D2AF7A7D2009F4273 /* Assets.xcassets */,
 				75C25B5F2AF7A7D2009F4273 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				75C25B5C2AF7A7D1009F4273 /* ContentView.swift in Sources */,
 				75C25B5A2AF7A7D1009F4273 /* AIVoiceToTextApp.swift in Sources */,
+				75C25B682AF7A853009F4273 /* SpeechRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,17 +279,21 @@
 				DEVELOPMENT_TEAM = 34GH77B7MS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Input your voice before conversaion to text";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Sample your voice and display text";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.goodstadt.john.AIVoiceToText;
+				PRODUCT_BUNDLE_IDENTIFIER = com.domain.AIVoiceToText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -304,17 +312,21 @@
 				DEVELOPMENT_TEAM = 34GH77B7MS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Input your voice before conversaion to text";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Sample your voice and display text";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.goodstadt.john.AIVoiceToText;
+				PRODUCT_BUNDLE_IDENTIFIER = com.domain.AIVoiceToText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -4,10 +4,12 @@
 //
 //  Created by John goodstadt on 02/08/2023.
 //
+// SpeechRecognizer Class based upon apple sample code Scrumdinger
+// Copyright © 2022 Apple Inc.
+//
 
 import Foundation
 
-import AVFoundation
 import Speech
 import SwiftUI
 
@@ -97,7 +99,7 @@ actor SpeechRecognizer: ObservableObject {
 			self.audioEngine = audioEngine
 			self.request = request
 			self.task = recognizer.recognitionTask(with: request, resultHandler: { [weak self] result, error in
-				print(result)
+				print(result ?? "invalid result")
 				self?.recognitionHandler(audioEngine: audioEngine, result: result, error: error)
 			})
 		} catch {
