@@ -95,7 +95,7 @@ actor SpeechRecognizer: ObservableObject {
 		}
 		
 		do {
-			let (audioEngine, request) = try Self.prepareEngine()
+			let (audioEngine, request) = try Self.prepareEngine()//returns AVAudioEngine + RecognitionRequest
 			self.audioEngine = audioEngine
 			self.request = request
 			self.task = recognizer.recognitionTask(with: request, resultHandler: { [weak self] result, error in
